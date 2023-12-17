@@ -170,3 +170,10 @@ exec_always feh --bg-fill ~/Desktop/WallPapers/Satoru-Gojo-2278816-wallhere.com.
 
 exec --no-startup-id i3-msg 'workspace 1; exec terminator'
 exec --no-startup-id i3-msg 'workspace 2; exec firefox'
+
+# Aumentar volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
+
+# Diminuir volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
+
